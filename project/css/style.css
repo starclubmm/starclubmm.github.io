@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+html, body {
+  display: grid;
+  height: 100%;
+  place-items: center;
+  background: linear-gradient(0deg, rgba(255, 244, 179, 1) 0%, rgba(255, 100, 100, 1) 100%);
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 500px;
+  height: 300px;
+}
+
+.buttons .style {
+  display: block;
+  margin-left: 60px;
+}
+
+.buttons .style button {
+  position: relative;
+  width: 150px;
+  margin: 40px 0;
+  color: #fff;
+  font-size: 20px;
+  outline: none;
+  display: block;
+  height: 55px;
+  font-weight: 800;
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  transition: all 0s ease-out;
+}
+
+.style button:active {
+  top: 3px;
+}
+
+.style button.facebook,
+.style button.facebook span {
+  background: #3B5999;
+  border-left: 1px solid #2E4476;
+  box-shadow: 0px 5px 0px 0px #2E4476;
+}
+
+.style button.facebook:active {
+  box-shadow: 0px 2px 0px 0px #2E4476;
+}
+
+.style button.viber,
+.style button.viber span {
+  background: #de463b;
+  border-left: 1px solid #c02b21;
+  box-shadow: 0px 5px 0px 0px #c02b21, 6px 4px 2px rgba(0, 0, 0, 0.3);
+}
+
+.style button.viber:active {
+  box-shadow: 0px 2px 0px 0px #c02b21;
+}
+
+.style button.telegram,
+.style button.telegram span {
+  background: #e1306c;
+  border-left: 1px solid #c91d56;
+  box-shadow: 0px 5px 0px 0px #c91d56, 6px 4px 2px rgba(0, 0, 0, 0.3);
+}
+
+.style button.telegram:active {
+  box-shadow: 0px 2px 0px 0px #c02b21;
+}
+
+.style button.twitter,
+.style button.twitter span {
+  background: #46C1F6;
+  border-left: 1px solid #269BD0;
+  box-shadow: 0px 5px 0px 0px #269BD0;
+}
+
+.style button.twitter:active {
+  box-shadow: 0px 2px 0px 0px #269bd0, 6px 4px 2px rgba(0, 0, 0, 0.3);
+}
+
+.style button span {
+  position: absolute;
+  left: -60px;
+  line-height: 55px;
+  font-size: 25px;
+  display: block;
+  font-weight: normal;
+  height: 55px;
+  width: 60px;
+  top: 0;
+  border-radius: 5px 0 0 5px;
+}
+
+.style button:active span {
+  top: -3px;
+}
+
+.style button.facebook span {
+  border-right: 1px solid #2e4476;
+}
+
+.style button.viber span {
+  border-right: 1px solid #c02b21;
+}
+
+.style button.telegram span {
+  border-right: 1px solid #c91d56;
+}
+
+.style button.twitter span {
+  border-right: 1px solid #269bd0;
+}
+
+.style button.facebook:active span {
+  box-shadow: 0px 5px 0px 0px #2e4476, 6px 4px 2px rgba(0, 0, 0, 0.3);
+}
+
+.style button.viber:active span {
+  box-shadow: 0px 5px 0px 0px #665CAC, 6px 4px 2px rgba(0, 0, 0, 0.3);
+}
+
+.style button.telegram:active span {
+  box-shadow: 0px 5px 0px 0px #0088CC, 6px 4px 2px rgba(0, 0, 0, 0.3);
+}
+
+.style button.twitter:active span {
+  box-shadow: 0px 5px 0px 0px #269bd0, 6px 4px 2px rgba(0, 0, 0, 0.3);
+}
