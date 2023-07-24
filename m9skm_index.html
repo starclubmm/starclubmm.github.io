@@ -49,6 +49,12 @@
 
         // Call the function when the page is loaded
         window.onload = redirectToPage;
+
+    // Event listener to handle the back button press
+    window.addEventListener('popstate', function (event) {
+        // Revert the URL back to the initial state
+        redirectToPage();
+    });
     </script>
 </body>
 
