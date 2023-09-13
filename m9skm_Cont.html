@@ -88,10 +88,11 @@
       <div class="text">အမ်နိုင်းရှမ်းကိုးမီးကစားရန် အေးကျင်းများမှတဆင့်  အကောင့်ဖွင့်ပါ။</div>
     </div>
     <div class="button-container">
-      <a href="https://embed.tawk.to/6501421c0f2b18434fd83527/default">
-        <button class="button button1">အေးကျင့်များနှင့်စကားပြောရန်</button>
-      </a>
+     
+        <button class="button button1" onclick="openTawkToChat()">အေးကျင့်များနှင့်စကားပြောရန်</button>
+        
       
+
     </div>
   </div>
   <!--Start of Tawk.to Script-->
@@ -105,6 +106,10 @@ s1.charset='UTF-8';
 s1.setAttribute('crossorigin','*');
 s0.parentNode.insertBefore(s1,s0);
 })();
+  function openTawkToChat() {
+  // Open the Tawk.to chat widget when the button is clicked
+  Tawk_API.toggle();
+  }
 </script>
 <!--End of Tawk.to Script-->
 </body>
