@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image and Button Layout</title>
+    <style>
+/* Define the custom font */
+@font-face {
+  font-family: 'CustomFont'; /* Choose a name for your font */
+  src: url('36.ttf') format('truetype'); /* Specify the path to your font file */
+  font-weight: normal;
+  font-style: normal;
+}
+
+body{ background-color: #000;
+  font-family: 'CustomFont', sans-serif; /* Use the font-family name you defined */
+ }
+        /* Style for the container that holds each image-button pair */
+        .container {
+            display: flex; /* Use flexbox for horizontal layout */
+            align-items: center; /* Center items vertically */
+            gap: 20px; /* Add space between image and button */
+        }
+
+        /* Style for the image */
+        .image {
+            max-width: 10%; /* Resize the image to fit the container */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        /* Style for the button 1 */
+        .button1 {
+            flex: 1; /* Take up remaining space in the container */
+            padding: 10px; /* Add padding for better spacing */
+            text-align: center;
+            background-color: #3B2518; /* Button background color for Button 1 */
+            color: #fff; /* Button text color */
+            border: none; /* Remove button border */
+            cursor: pointer;
+margin-right:4px;
+
+            border-radius: 10px; /* Add rounded corners to the button */
+   text-decoration: none; 
+        }
+/* Style for the horizontal rule (hr) */
+hr {
+ opacity: 0;
+    border-color: #000; /* Set the border color to black */
+}
+
+
+        /* Style for the button 2 */
+        .button2 {
+            flex: 1; /* Take up remaining space in the container */
+            padding: 10px; /* Add padding for better spacing */
+            text-align: center;
+            background-color: #125B0A; /* Button background color for Button 2 */
+            color: #fff; /* Button text color */
+            border: none; /* Remove button border */
+            cursor: pointer;
+margin-right:4px;
+
+            border-radius: 10px; /* Add rounded corners to the button */
+   text-decoration: none; 
+        }
+
+        /* Style for the button 3 */
+        .button3 {
+            flex: 1; /* Take up remaining space in the container */
+            padding: 10px; /* Add padding for better spacing */
+            text-align: center;
+            background-color: #884612; /* Button background color for Button 3 */
+            color: #fff; /* Button text color */
+            border: none; /* Remove button border */
+            cursor: pointer;
+margin-right:4px;
+
+            border-radius: 10px; /* Add rounded corners to the button */
+   text-decoration: none; 
+        }
+
+        /* Style for the button 4 */
+        .button4 {
+            flex: 1; /* Take up remaining space in the container */
+            padding: 10px; /* Add padding for better spacing */
+            text-align: center;
+            background-color: #09043A; /* Button background color for Button 4 */
+            color: #fff; /* Button text color */
+            border: none; /* Remove button border */
+            cursor: pointer;
+
+margin-right:4px;
+            border-radius: 10px; /* Add rounded corners to the button */
+   text-decoration: none; 
+        }
+
+        /* Style for the yellow buttons */
+        .yellow-button {
+            background-color: #ffcc00; /* Yellow background color */
+        }
+
+        /* Additional styles for the grid */
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            border: none;
+            margin-top: 20px; /* Add margin-top to separate the grid from image-button pairs */
+        }
+
+        th, td {
+            padding: 0;
+            text-align: center;
+            border: none;
+        }
+
+        td {
+            width: 50%;
+        }
+
+        button.grid-button {
+            background-color: #01718C;
+text-align: center;
+            color: #fff;
+            border: none;
+            padding: 10px 0;
+            cursor: pointer;
+            width: 97%;
+            border-radius: 10px;
+            margin-top: 10px;
+            display: flex;
+            align-items: center; /* Center the icon and text vertically */
+            justify-content: flex-start; /* Align the icon and text to the start */
+            gap: 10px; /* Add space between icon and text */
+height: 40px; /* Set a fixed height for all buttons */
+    white-space: nowrap;
+   font-size: 10px; 
+        }
+
+        /* Apply the yellow button style to specific grid buttons */
+        .grid-button.yellow-button {
+text-align: center;
+   font-size: 10px; 
+            background-color: #AB01FA; /* Yellow background color for specific grid buttons */
+        }
+
+        button.grid-button:hover {
+            background-color: #2980b9;
+        }
+        
+        .title-container {
+            text-align: center;
+        }
+
+        h2 {
+color:white;
+            margin-top: 10;
+        }
+
+        p {
+color:white;
+
+            margin: 0;
+        }
+ a {
+    text-decoration: none;
+  }
+    </style>
+</head>
+<body>
+<div class="title-container">
+    <h2>Myanmar Slot & Casino Games</h2>
+    <p>ဤဆော့၀ဲလ်သည် အားလုံးကို တနေရာထဲမှာ <br>ကစားနိုင်အောင်ပြုလုပ်ထားခြင်းဖြစ်ပါသည်။</p><br>
+</div>
+<!-- Your existing image-button pairs -->
+<div class="container">
+    <img class="image" src="1024.png" alt="Image 1">
+      <a href="https://www.example.com" class="button1" target="_blank">M9 SKM အမြန်ကစားမည်</a>
+
+</div>
+<hr>
+<div class="container">
+    <img class="image" src="icon.png" alt="Image 2">
+    <a href="https://www.example.com" class="button2" target="_blank">SKM TPT အမြန်ကစားမည်</a>
+</div>
+<hr>
+<div class="container">
+    <img class="image" src="club388.png" alt="Image 3">
+    <a href="https://www.example.com" class="button3" target="_blank">CLUB 388 အမြန်ကစားမည်</a>
+</div>
+<hr>
+<div class="container">
+    <img class="image" src="live22.png" alt="Image 4">
+    <a href="https://www.example.com" class="button4" target="_blank">LIVE 22 အမြန်ကစားမည်</a>
+</div>
+<hr>
+
+<!-- Grid -->
+<table>
+    <tr>
+        <td>
+            <a href="https://example.com">
+  <button class="grid-button yellow-button">
+    <img src="viber.png" alt="Viber Icon" width="20" height="20">
+    M9 ဘိုက်ဘာသို့ဆက်သွယ်ရန်
+  </button>
+</a>
+
+        </td>
+        <td>
+ <a href="https://example.com">
+            <button class="grid-button">
+                <img src="tele.png" alt="Telegram Icon" width="20" height="20">
+               M9 တယ်လီဂရမ်သို့ဆက်သွယ်ရန်
+            </button></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+                <a href="https://example.com">
+  <button class="grid-button yellow-button">
+    <img src="viber.png" alt="Viber Icon" width="20" height="20">
+   TPT ဘိုက်ဘာသို့ဆက်သွယ်ရန်
+  </button>
+</a>
+        </td>
+        <td>
+ <a href="https://example.com">
+            <button class="grid-button">
+                <img src="tele.png" alt="Telegram Icon" width="20" height="20">
+             TPT တယ်လီဂရမ်သို့ဆက်သွယ်ရန်
+            </button></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+                 <a href="https://example.com">
+  <button class="grid-button yellow-button">
+    <img src="viber.png" alt="Viber Icon" width="20" height="20">
+    CLub388ဘိုက်ဘာသို့ဆက်သွယ်ရန်
+  </button>
+</a>
+        </td>
+        <td>
+ <a href="https://example.com">
+            <button class="grid-button">
+                <img src="tele.png" alt="Telegram Icon" width="20" height="20">
+              CLub388တယ်လီဂရမ်သို့ဆက်သွယ်ရန်
+            </button></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+                <a href="https://example.com">
+  <button class="grid-button yellow-button">
+    <img src="viber.png" alt="Viber Icon" width="20" height="20">
+    Live22 ဘိုက်ဘာသို့ဆက်သွယ်ရန်
+  </button>
+</a>
+        </td>
+        <td>
+ <a href="https://example.com">
+            <button class="grid-button">
+                <img src="tele.png" alt="Telegram Icon" width="20" height="20">
+                Live22 တယ်လီဂရမ်သို့ဆက်သွယ်ရန်
+            </button></a>
+        </td>
+    </tr>
+</table>
+</body>
+</html>
