@@ -80,6 +80,64 @@
   .card, .button {
     font-family: 'CustomFont', sans-serif;
   }
+
+  /* Popup Styles */
+  .popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+  }
+
+  .popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .popup-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .popup-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+
+  .close {
+    cursor: pointer;
+    font-size: 24px;
+    color: #333;
+  }
+
+  .close:hover {
+    color: #666;
+  }
+
+  .popup-body {
+    text-align: center;
+  }
+  .ok-button {
+    background-color: black;
+  }
+
+  .popup-description {
+    margin-bottom: 20px;
+  }
   </style>
 </head>
 <body>
@@ -88,16 +146,41 @@
       <div class="text"> တောင်ပေါ်သားရှမ်းကိုးမီးကစားရန် ဝိုက်ဗာနှင့်<br>တယ်လီဂရမ်တို့မှ အကောင့်ဖွင့်ပါ။</div>
     </div>
     <div class="button-container">
-      <a href="skm/contact.html" target="_blank">
-        <button class="button button1">ကစားရန်နှိပ်ပါ</button>
-      </a>
-      <a href="https://taungpawthar.site/github/tpt/contact.html" target="_blank">
-        <button class="button button1">ဘိုက်ဘာသို့ဆက်သွယ်ရန်နှိပ်ပါ</button>
-      </a>
+      <button class="button button1" onclick="showPopup()">ကစားရန်နှိပ်ပါ</button>
+      <button class="button button1" onclick="showPopup()">ဘိုက်ဘာသို့ဆက်သွယ်ရန်နှိပ်ပါ</button>
       <a href="https://t.me/shweshankoemeeskmaung_bot" target="_blank">
-        <button class="button button2">တယ်လီဂရမ်သို့ဆက်သွယ်ရန်နှိပ်ပါ</button>
-      </a>
+      <button class="button button2">တယ်လီဂရမ်သို့ဆက်သွယ်ရန်နှိပ်ပါ</button></a>
     </div>
   </div>
+
+  <!-- Popup Message -->
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <div class="popup-header">
+        <span class="popup-title"> အသိပေးခြင်း</span>
+        <span class="close" onclick="closePopup()">&times;</span>
+      </div>
+      <div class="popup-body">
+        <p class="popup-description"><b>Viber မှတဆင့်ဆက်သွယ်ပြီး အကောင့်ဖွင့်မည့် လူကြီးမင်းများသိရှိရန်</b><br><hr>ကျွန်ုပ်တို့၏ Viber Chatbot သည်အချိန်မရွေး Suspended ဖြစ်နိုင်ပါသည်။ အကယ်၍ Viber Chatbot Suspended ဖြစ်သွားသည့်အခါတွင် လူကြီးမင်းအတွက် 
+ငွေသွင်း၊ငွေထုတ် ဝန်ဆောင်မှုများ ဆက်လက်လုပ်ဆောင်နိုင်ရန် ဤ Application မှာဖော်ပြထားသည့် Telegram (သို့မဟုတ်) Suspended ဖြစ်ပြီးနောက် ထပ်မံပြောင်းလဲထားသော Viber Chatbot အသစ်မှတဆင့် ပုံမှန်အတိုင်းလုပ်ဆောင်နိုင်မည်ဖြစ်ပါသည်။
+ထို့ကြောင့်ဤ Application အားမဖျက်ပဲအသုံးပြုပေးပါရန် အသိပေးအပ်ပါတယ်</p>
+        <button class="button ok-button" onclick="redirect()">OK</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function showPopup() {
+      document.getElementById('popup').style.display = 'block';
+    }
+
+    function closePopup() {
+      document.getElementById('popup').style.display = 'none';
+    }
+
+    function redirect() {
+      window.location.href = "https://taungpawthar.site/github/tpt/contact.html";
+    }
+  </script>
 </body>
 </html>
