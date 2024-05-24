@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>card 2</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      background-color: #001F3F;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-size: 16px;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px; /* Added padding here */
+    }
+    .card {
+      background-color: #E8E9E4;
+      border-radius: 10px;
+      box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+      padding: 20px;
+      max-width: 100%;
+      text-align: center;
+    }
+    .text {
+      font-size: 19px;
+      font-weight: bold;
+      color: #333;
+      margin: 0px;
+    }
+    .button-container {
+      padding-top: 30px;
+      width: 100%;
+      max-width: 260px;
+    }
+    .button {
+      border: none;
+      border-radius: 10px;
+      padding: 10px;
+      width: 100%;
+      font-size: 18px;
+      margin-top: 20px;
+      cursor: pointer;
+      transition: transform 0.2s ease-in-out;
+      box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+      color: white;
+    }
+    .button1 {
+      background-color: #A669EF;
+      box-shadow: 0 10px 10px rgba(166, 105, 239, 0.5);
+    }
+    .button2 {
+      background-color: #06DAED;
+      box-shadow: 0 10px 10px rgba(6, 218, 237, 0.5);
+    }
+    .button:active {
+      transform: scale(0.95);
+    }
+
+    /* Media query for smaller screens */
+    @media screen and (max-width: 480px) {
+      .text {
+        font-size: 16px;
+      }
+      .button {
+        font-size: 16px;
+      }
+    }
+    @font-face {
+    font-family: 'CustomFont';
+    src: url(font/tgi.ttf) format('truetype');
+  }
+
+  /* Apply the custom font to the card text and button */
+  .card, .button {
+    font-family: 'CustomFont', sans-serif;
+  }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="text">အမ်နိုင်းရှမ်းကိုးမီးကစားရန် ဝိုက်ဗာနှင့်<br>တယ်လီဂရမ်တို့မှ အကောင့်ဖွင့်ပါ။</div>
+    </div>
+    <div class="button-container">
+      <a href="https://taungpawthar.site/github/m9/contact.html" target="_blank">
+        <button class="button button1">ဘိုက်ဘာသို့ဆက်သွယ်ရန်နှိပ်ပါ</button>
+      </a>
+      <a href="https://t.me/starclubm9skm_bot" target="_blank">
+        <button class="button button2">တယ်လီဂရမ်သို့ဆက်သွယ်ရန်နှိပ်ပါ</button>
+      </a>
+    </div>
+  </div>
+</body>
+</html>
